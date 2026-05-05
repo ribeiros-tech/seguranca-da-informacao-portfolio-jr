@@ -113,3 +113,9 @@ Simulação de incidentes de segurança com análise de logs, identificação e 
 - Certificações na área de Segurança da Informação
 
 ---
+
+## 📌 Autora
+
+Vitória Ribeiro
+Estudante de Análise e Desenvolvimento de Sistemas
+Foco em Segurança da Informação e Cibersegurança
