@@ -24,7 +24,7 @@ Cada projeto foi desenvolvido com foco em:
 - Aplicação prática de segurança
 - Mentalidade de analista de segurança
 
-## 🗺️ Roadmap de Projetos
+# 🗺️ Roadmap de Projetos
 
 A estrutura segue uma progressão lógica baseada nas principais áreas da Segurança da Informação:
 
