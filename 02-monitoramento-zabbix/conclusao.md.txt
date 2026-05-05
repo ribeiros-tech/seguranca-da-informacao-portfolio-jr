@@ -1,0 +1,21 @@
+# 📌 Conclusão
+
+Este projeto teve como objetivo implementar um sistema de monitoramento utilizando o Zabbix, simulando um ambiente real de infraestrutura.
+
+Foi possível configurar o monitoramento de recursos essenciais como CPU e memória, além da criação de triggers para detecção de situações críticas.
+
+A integração com envio de alertas por e-mail permitiu a notificação em tempo real de incidentes, demonstrando na prática o funcionamento de um processo de resposta a incidentes.
+
+Durante o desenvolvimento, foram enfrentados desafios como configuração de itens de monitoramento e envio de alertas, contribuindo para o aprendizado prático da ferramenta.
+
+## 🧠 Principais aprendizados
+
+- Configuração de monitoramento com Zabbix
+- Criação e ajuste de triggers
+- Integração com serviços de alerta (SMTP)
+- Simulação de incidentes reais
+- Análise de métricas de sistema
+
+## 🚀 Resultado
+
+O projeto demonstra na prática conhecimentos em monitoramento, detecção de problemas e resposta a incidentes, habilidades essenciais para atuação em Segurança da Informação e Infraestrutura de TI.

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Atualizando sistema..."
+sudo apt update -y
+
+echo "Instalando Zabbix Agent..."
+wget -q https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+sudo dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+sudo apt update -y
+sudo apt install zabbix-agent -y
+
+echo "Configurando Agent..."
+sudo sed -i 's/Server=127.0.0.1/Server=172.18.8.80/g' /etc/zabbix/zabbix_agentd.conf
+sudo sed -i 's/# ServerActive=127.0.0.1/# ServerActive=disabled/g' /etc/zabbix/zabbix_agentd.conf
+sudo sed -i 's/Hostname=Zabbix server/Hostname=vm-aws-vitoria/g' /etc/zabbix/zabbix_agentd.conf
+
+echo "Reiniciando serviço..."
+sudo systemctl restart zabbix-agent
+sudo systemctl enable zabbix-agent
+
+echo "Instalação finalizada!"

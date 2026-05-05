@@ -1,0 +1,17 @@
+# 📊 Conclusão do Projeto
+
+Este projeto teve como objetivo a implementação de um ambiente de monitoramento em cloud utilizando AWS, Zabbix e Grafana.
+
+Durante o desenvolvimento, foi possível aplicar conceitos fundamentais de computação em nuvem (IaaS), redes, segurança e monitoramento de sistemas.
+
+A criação da instância EC2 e sua configuração demonstraram na prática o funcionamento de infraestrutura sob demanda. A configuração de acesso seguro via SSH e regras de firewall evidenciaram a importância da segurança em ambientes cloud.
+
+A integração com o Zabbix permitiu a coleta e análise de métricas em tempo real, além da configuração de alertas automáticos por e-mail, simulando cenários reais de monitoramento corporativo.
+
+Durante a implementação do Grafana, foram identificadas limitações de rede relacionadas ao ambiente local (CGNAT), o que impactou a visualização completa dos dados. Esse cenário é comum em ambientes domésticos e reforça a importância de arquiteturas baseadas totalmente em cloud para ambientes produtivos.
+
+Como aprendizado principal, destaca-se a importância da integração entre diferentes camadas da infraestrutura (rede, sistema operacional e ferramentas de monitoramento), bem como a capacidade de diagnosticar e contornar limitações reais de ambiente.
+
+Este projeto representa uma base sólida para atuação em áreas como infraestrutura, NOC e DevOps, com possibilidade de evolução para cenários mais avançados.
+
+---

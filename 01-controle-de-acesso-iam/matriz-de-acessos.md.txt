@@ -1,0 +1,13 @@
+# 🔐 Matriz de Controle de Acesso
+
+| Recurso            | Admin | Usuario1 |
+|-------------------|------|----------|
+| /empresa/admin    | ✔️   | ❌       |
+| /empresa/publico  | ✔️   | ✔️       |
+
+## 📌 Política aplicada
+- Princípio do menor privilégio
+- Separação de funções
+
+## ⚠️ Risco mitigado
+- Acesso indevido a dados sensíveis

@@ -1,0 +1,432 @@
+===== RELATÓRIO DE SEGURANÇA =====
+
+🔴 Tentativas de login falhadas:
+Apr 24 02:54:32 Vitoria sshd[2293]: Failed password for red_duchess from 127.0.0.1 port 34810 ssh2
+Apr 24 02:56:54 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+
+🟢 Logins bem sucedidos:
+Apr 24 02:57:20 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/grep 'Accepted password' /var/log/auth.log
+
+🟡 Uso de sudo:
+Apr 16 02:54:50 Vitoria usermod[434]: add 'red_duchess' to group 'sudo'
+Apr 16 02:54:50 Vitoria usermod[434]: add 'red_duchess' to shadow group 'sudo'
+Apr 16 02:59:16 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/ss -tulnp
+Apr 16 02:59:16 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 16 02:59:16 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 16 03:06:51 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 16 03:06:51 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 17 01:59:30 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 17 01:59:30 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 17 02:55:27 Vitoria sudo: pam_unix(sudo-i:session): session closed for user root
+Apr 17 02:58:41 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 17 02:58:41 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 17 02:58:45 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/rm -rf /var/lib/grafana/plugins/grafana-exploretraces-app /var/lib/grafana/plugins/grafana-lokiexplore-app /var/lib/grafana/plugins/grafana-metricsdrilldown-app /var/lib/grafana/plugins/grafana-pyroscope-app
+Apr 17 02:58:45 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 02:58:45 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 02:58:58 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart grafana-server
+Apr 17 02:58:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 02:58:58 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:02:08 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart grafana-server
+Apr 17 03:02:08 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:02:09 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:02:38 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart grafana-server
+Apr 17 03:02:38 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:02:39 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:41:45 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/rm -rf /var/lib/grafana/plugins/alexanderzobnin-zabbix-app
+Apr 17 03:41:45 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:41:45 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:41:45 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart grafana-server
+Apr 17 03:41:45 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:41:46 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:43:41 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/rm -rf /var/lib/grafana/plugins/alexanderzobnin-zabbix-app
+Apr 17 03:43:41 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:43:41 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 03:43:49 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart grafana-server
+Apr 17 03:43:49 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 03:43:49 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:12:46 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service apache2 status
+Apr 17 04:12:46 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:20:16 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:16:42 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install php php-mysql php-gd php-xml php-bcmath php-mbstring php-ldap php-json php-curl -y
+Apr 17 04:16:42 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:18:00 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:18:20 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Apr 17 04:18:20 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:18:20 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:42:51 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install libapache2-mod-php -y
+Apr 17 04:42:51 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:42:58 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:44:06 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/a2enmod php
+Apr 17 04:44:06 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:44:07 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:44:35 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Apr 17 04:44:35 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:44:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:44:56 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /var/www/html/teste.php
+Apr 17 04:44:56 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:44:56 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:46:34 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/a2enmod php8.1
+Apr 17 04:46:34 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:46:35 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:46:55 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Apr 17 04:46:55 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:46:56 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:54:19 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install php-mysql php-gd php-xml php-bcmath php-mbstring php-ldap php-json php-curl php-zip -y
+Apr 17 04:54:19 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 05:02:11 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 17 04:54:53 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart apache2
+Apr 17 04:54:53 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 17 04:54:54 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 18 15:31:20 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service mysql start
+Apr 18 15:31:20 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 18 15:38:56 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 18 15:38:56 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service apache2 start
+Apr 18 15:38:56 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 18 15:38:56 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 18 15:38:56 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service zabbix-server start
+Apr 18 15:38:56 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 18 15:38:57 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 18 15:38:57 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service zabbix-agent start
+Apr 18 15:38:57 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 18 15:38:58 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 18 15:39:20 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/service zabbix-server status
+Apr 18 15:39:20 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 18 15:33:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 19 20:51:35 Vitoria sudo: pam_unix(sudo-i:session): session closed for user root
+Apr 19 20:51:56 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 19 20:51:56 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 20 00:13:29 Vitoria sudo: pam_unix(sudo-i:session): session closed for user root
+Apr 20 00:13:29 Vitoria sudo: pam_systemd(sudo-i:session): Failed to release session: Interrupted system call
+Apr 20 00:25:26 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 20 00:25:26 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 20 03:01:00 Vitoria sudo: pam_unix(sudo-i:session): session closed for user root
+Apr 20 03:01:25 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+Apr 20 03:09:02 Vitoria sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by (uid=1000)
+Apr 20 03:01:28 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+Apr 20 03:01:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:01:46 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:01:46 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Apr 20 03:01:46 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:03:24 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:07:34 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/adduser funcionario
+Apr 20 03:07:34 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:10:32 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:10:58 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/adduser admin_ti
+Apr 20 03:10:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:14:55 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:16:15 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/groupadd funcionarios
+Apr 20 03:16:15 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:16:15 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:16:15 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/groupadd administradores
+Apr 20 03:16:15 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:16:15 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:16:26 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/usermod -aG funcionarios funcionario
+Apr 20 03:16:26 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:16:26 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:16:36 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/sbin/usermod -aG administradores admin_ti
+Apr 20 03:16:36 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:16:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:17:47 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/mkdir /empresa
+Apr 20 03:17:47 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:17:47 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:17:54 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/publico
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:17:54 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/privado
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:17:54 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/admin
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:17:54 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:18:16 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chmod 777 /empresa/publico
+Apr 20 03:18:16 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:18:16 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:26:04 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chown root:funcionarios /empresa/privado
+Apr 20 03:26:04 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:26:04 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:18:37 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chmod 770 /empresa/privado
+Apr 20 03:18:37 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:18:37 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:18:47 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chown root:administradores /empresa/admin
+Apr 20 03:18:47 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:18:47 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:18:57 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/chmod 770 /empresa/admin
+Apr 20 03:18:57 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:18:57 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:21:22 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /empresa/publico/info.txt
+Apr 20 03:21:22 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:21:22 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:21:32 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /empresa/privado/interno.txt
+Apr 20 03:21:32 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:21:32 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 03:21:44 Vitoria sudo:     root : TTY=pts/2 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /empresa/admin/sistema.txt
+Apr 20 03:21:44 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by red_duchess(uid=0)
+Apr 20 03:21:44 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 20 20:36:34 Vitoria sudo: pam_unix(sudo-i:session): session closed for user root
+Apr 22 12:40:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt update
+Apr 22 12:40:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:41:05 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:41:06 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Apr 22 12:41:06 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:41:22 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:50:58 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/useradd admin
+Apr 22 12:50:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:50:58 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:51:23 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/useradd usuario1
+Apr 22 12:51:23 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:43:43 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:44:09 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/useradd usuario
+Apr 22 12:44:09 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:44:09 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:45:01 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/useradd admin1
+Apr 22 12:45:01 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:45:01 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:45:27 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/passwd admin1
+Apr 22 12:45:27 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:45:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:45:58 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/passwd usuario1
+Apr 22 12:45:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:46:05 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:46:31 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupadd administradores
+Apr 22 12:46:31 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:46:31 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:47:37 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupdel administradores
+Apr 22 12:47:37 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:47:37 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:48:07 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupdel admin
+Apr 22 12:48:07 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:48:07 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:48:31 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupadd admin
+Apr 22 12:48:31 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:48:31 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:56:38 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupdel usuario
+Apr 22 12:56:38 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:56:38 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:50:13 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/useradd admin
+Apr 22 12:50:13 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:50:13 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:58:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/userdel admin
+Apr 22 12:58:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:58:28 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:59:44 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/userdel admin
+Apr 22 12:59:44 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:59:44 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:59:44 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/userdel usuario1
+Apr 22 12:59:44 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:59:44 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:59:59 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/userdel -r admin
+Apr 22 12:59:59 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:59:59 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:59:59 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/userdel -r usuario1
+Apr 22 12:59:59 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:59:59 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:52:42 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupdel administradores
+Apr 22 12:52:42 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:52:42 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:52:42 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/groupdel usuarios
+Apr 22 12:52:42 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:52:42 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:54:33 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/userdel admin1
+Apr 22 12:54:33 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:54:34 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:03:00 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/userdel admin_ti
+Apr 22 13:03:00 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:55:20 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:57:15 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/apt update
+Apr 22 12:57:15 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:57:24 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:57:24 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Apr 22 12:57:24 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:57:26 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 12:59:36 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/useradd admin
+Apr 22 12:59:36 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 12:59:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:00:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/groupdel administradores
+Apr 22 13:00:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:00:28 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:00:49 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/groupdel admin
+Apr 22 13:00:49 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:00:49 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:00:58 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/useradd admin
+Apr 22 13:00:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:00:59 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:01:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/useradd usuario1
+Apr 22 13:01:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:01:29 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:01:37 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/passwd admin
+Apr 22 13:01:37 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:01:44 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:01:58 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/passwd usuario1
+Apr 22 13:01:58 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:02:04 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:02:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/groupadd administradores
+Apr 22 13:02:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:02:28 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:10:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/groupadd usuarios
+Apr 22 13:10:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:10:29 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:10:30 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/usermod -aG administradores admin
+Apr 22 13:10:30 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:10:30 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:11:00 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/sbin/usermod -aG usuarios usuario1
+Apr 22 13:11:00 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:11:00 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:14:17 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa
+Apr 22 13:14:17 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:14:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:14:41 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/admin
+Apr 22 13:14:41 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:14:41 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:14:41 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/publico
+Apr 22 13:14:41 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:14:41 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:15:46 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/rm -r /empresa
+Apr 22 13:15:46 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:15:46 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:16:28 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/rm -r /empresa/admin
+Apr 22 13:16:28 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:16:28 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:17:11 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/rm -r /empresa/admin
+Apr 22 13:17:11 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:17:11 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:25:35 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/rm -r /empresa/publico
+Apr 22 13:25:35 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:25:35 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:19:17 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:19:17 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/admin
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:19:17 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/mkdir /empresa/publico
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:19:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:29:48 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/chown adminq
+Apr 22 13:29:48 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:29:48 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:22:27 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/chown admin:administradores /empresa/admin
+Apr 22 13:22:27 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:22:27 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:23:00 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/chmod 770 /empresa/admin
+Apr 22 13:23:00 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:23:00 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:43:21 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/chmod 777 /empresa/admin
+Apr 22 13:43:21 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:43:21 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 13:44:06 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/chmod 770 /empresa/admin
+Apr 22 13:44:06 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 13:44:06 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 22 14:02:18 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=/usr/bin/apt install acl
+Apr 22 14:02:18 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 22 14:02:26 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 23 01:37:33 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl start zabbix-server
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 23 01:37:33 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl start zabbix-agent
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 23 01:37:33 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl start apache2
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 23 01:37:33 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 23 01:37:43 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/systemctl status zabbix-server
+Apr 23 01:37:43 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 23 01:37:46 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:40:16 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+Apr 24 02:40:16 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:40:16 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:41:44 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+Apr 24 02:41:44 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:43:40 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:44:26 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+Apr 24 02:44:26 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:45:29 Vitoria sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/3 ruser=red_duchess rhost=  user=red_duchess
+Apr 24 02:45:46 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:46:01 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ls
+Apr 24 02:46:01 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:46:01 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:46:36 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/tail -n 20 /var/log/auth.log
+Apr 24 02:46:36 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:46:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:59:31 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/service ssh status
+Apr 24 02:59:31 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:59:31 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:52:33 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt update
+Apr 24 02:52:33 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:52:41 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:52:41 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+Apr 24 02:52:41 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:52:50 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:53:02 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/service ssh start
+Apr 24 02:53:02 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:53:02 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:00:51 Vitoria sudo: red_duchess : TTY=pts/3 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/service ssh status
+Apr 24 03:00:51 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:53:36 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:55:59 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/tail -n 20 /var/log/auth.log
+Apr 24 02:55:59 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:55:59 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:56:54 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+Apr 24 02:56:54 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:56:54 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:57:20 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/grep 'Accepted password' /var/log/auth.log
+Apr 24 02:57:20 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:57:20 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 02:57:35 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/bin/grep sudo /var/log/auth.log
+Apr 24 02:57:35 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 02:57:35 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:29:29 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt update
+Apr 24 03:29:29 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:29:38 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:29:38 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt install docker.io -y
+Apr 24 03:29:38 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:30:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:31:21 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/sbin/service docker start
+Apr 24 03:31:21 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:31:22 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:32:02 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/apt install docker-compose -y
+Apr 24 03:32:02 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:32:14 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:40:02 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess/wazuh-docker/single-node ; USER=root ; COMMAND=/usr/bin/docker ps
+Apr 24 03:40:02 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:40:02 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 03:40:14 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess/wazuh-docker/single-node ; USER=root ; COMMAND=/usr/sbin/usermod -aG docker red_duchess
+Apr 24 03:40:14 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 03:40:14 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 04:28:12 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess/wazuh-docker/single-node ; USER=root ; COMMAND=/usr/sbin/sysctl -w vm.max_map_count=262144
+Apr 24 04:28:12 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 04:28:12 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 24 04:43:03 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=/usr/sbin/sysctl -w vm.max_map_count=262144
+Apr 24 04:43:03 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 24 04:43:03 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 18:56:44 Vitoria sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=red_duchess rhost=  user=red_duchess
+Apr 26 19:56:08 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=./monitor_logs.sh
+Apr 26 19:56:08 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 19:56:08 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 19:57:04 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/home/red_duchess ; USER=root ; COMMAND=./monitor_logs.sh
+Apr 26 19:57:04 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 19:57:04 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 20:11:44 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=./monitor_logs.sh
+Apr 26 20:11:44 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 20:11:45 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 20:10:53 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=./scripts/monitor_logs.sh
+Apr 26 20:10:53 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 20:10:53 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 20:14:29 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/Users/vitor ; USER=root ; COMMAND=./scripts/monitor_logs.sh
+Apr 26 20:14:29 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 20:22:17 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 20:26:26 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/seguranca-da-informacao-portfolio/03-analise-de-logs-siem ; USER=root ; COMMAND=./scripts/monitor_logs.sh
+Apr 26 20:26:26 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+Apr 26 20:26:27 Vitoria sudo: pam_unix(sudo:session): session closed for user root
+Apr 26 20:35:03 Vitoria sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=red_duchess rhost=  user=red_duchess
+Apr 26 20:27:28 Vitoria sudo: red_duchess : 3 incorrect password attempts ; TTY=pts/0 ; PWD=/mnt/c/seguranca-da-informacao-portfolio/03-analise-de-logs-siem ; USER=root ; COMMAND=/usr/bin/ls
+Apr 26 20:27:42 Vitoria sudo: red_duchess : TTY=pts/0 ; PWD=/mnt/c/seguranca-da-informacao-portfolio/03-analise-de-logs-siem ; USER=root ; COMMAND=./scripts/monitor_logs.sh
+Apr 26 20:27:42 Vitoria sudo: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1000)
+
+📊 Total de falhas de login:
+2
+
+🌐 IPs com falha de login:
+127.0.0.1
+COMMAND=/usr/bin/grep
+
+===== FIM DO RELATÓRIO =====

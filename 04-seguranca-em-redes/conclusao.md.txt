@@ -1,0 +1,27 @@
+# 📌 Conclusão
+
+Este projeto proporcionou a aplicação prática de conceitos fundamentais de Segurança da Informação, permitindo compreender na prática como ocorre o monitoramento e a defesa contra tentativas de acesso não autorizado.
+
+A utilização do Wireshark possibilitou a visualização detalhada do tráfego de rede, contribuindo para o entendimento dos protocolos e da comunicação entre sistemas.
+
+Já o Fail2Ban demonstrou sua eficiência como ferramenta de prevenção de intrusão, ao identificar padrões suspeitos em logs de autenticação e aplicar bloqueios automáticos ao IP atacante.
+
+A simulação de ataque de força bruta via SSH foi essencial para validar o funcionamento do sistema, evidenciando a importância de mecanismos automatizados de defesa em ambientes reais.
+
+Além disso, o projeto destacou a relevância do monitoramento contínuo e da análise de logs como pilares da segurança cibernética.
+
+---
+
+## 🎯 Principais Aprendizados
+
+- Importância do monitoramento de rede
+- Funcionamento de ataques de força bruta
+- Análise de logs de autenticação
+- Automação na resposta a incidentes
+- Configuração de ferramentas de segurança
+
+---
+
+## 🚀 Conclusão Final
+
+O projeto atingiu seu objetivo ao demonstrar, de forma prática e eficiente, a capacidade de detectar, analisar e mitigar tentativas de invasão, reforçando a importância da segurança proativa em sistemas computacionais.
