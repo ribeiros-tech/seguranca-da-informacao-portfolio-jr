@@ -46,36 +46,36 @@ A proposta consiste na criação de usuários, grupos e definição de permissõ
 
 # ⚙️ Implementação
 
-- 1. Criação de usuários
+1. Criação de usuários
 
-sudo adduser funcionario
-sudo adduser admin_ti
+- sudo adduser funcionario
+- sudo adduser admin_ti
 
-- 2. Criação de grupos
+2. Criação de grupos
 
-sudo groupadd funcionarios
-sudo groupadd administradores
+- sudo groupadd funcionarios
+- sudo groupadd administradores
 
-- 3. Associação de usuários aos grupos
+3. Associação de usuários aos grupos
 
-sudo usermod -aG funcionarios funcionario
-sudo usermod -aG administradores admin_ti
+- sudo usermod -aG funcionarios funcionario
+- sudo usermod -aG administradores admin_ti
 
-- 4. Criação de diretórios
-sudo mkdir -p /empresa/{publico,privado,admin}
+4. Criação de diretórios
+- sudo mkdir -p /empresa/{publico,privado,admin}
 
-- 5. Definição de permissões
+5. Definição de permissões
 
 - Público (acesso total)
-sudo chmod 777 /empresa/publico
+- sudo chmod 777 /empresa/publico
 
-- Privado (somente funcionários)
-sudo chown root:funcionarios /empresa/privado
-sudo chmod 770 /empresa/privado
+Privado (somente funcionários)
+- sudo chown root:funcionarios /empresa/privado
+- sudo chmod 770 /empresa/privado
 
-- Administrativo (somente admin)
-sudo chown root:administradores /empresa/admin
-sudo chmod 770 /empresa/admin
+Administrativo (somente admin)
+- sudo chown root:administradores /empresa/admin
+- sudo chmod 770 /empresa/admin
 
 # 🧪 Testes Realizados
 
