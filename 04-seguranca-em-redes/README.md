@@ -1,4 +1,4 @@
-## 🔥 Configuração de Firewall
+# 🔥 Configuração de Firewall
 
 Foram aplicadas regras de firewall utilizando UFW:
 
@@ -69,14 +69,14 @@ O sistema identificou o padrão de ataque e realizou o bloqueio automático do I
 
 ## 📁 Estrutura do Projeto
 
-04-seguranca-em-redes/
-┣ README.md
-┣ ataques-simulados.md
-┣ conclusao.md
-┣ evidencias/
-┃ ┗ prints e logs
-┣ scripts/
-┃ ┗ coleta_evidencias.sh
+- 04-seguranca-em-redes/
+- ┣ README.md
+- ┣ ataques-simulados.md
+- ┣ conclusao.md
+- ┣ evidencias/
+- ┃ ┗ prints e logs
+- ┣ scripts/
+- ┃ ┗ coleta_evidencias.sh
 
 ---
 
@@ -107,4 +107,4 @@ Este projeto demonstra na prática conceitos fundamentais de cibersegurança, in
 ## 👩‍💻 Autora
 
 Vitória Ribeiro  
-Projeto voltado para desenvolvimento profissional em Segurança da Informação.
+- Projeto voltado para desenvolvimento profissional em Segurança da Informação.
