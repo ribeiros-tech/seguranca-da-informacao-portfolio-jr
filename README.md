@@ -116,6 +116,7 @@ Simulação de incidentes de segurança com análise de logs, identificação e 
 
 ## 📌 Autora
 
-Vitória Ribeiro
+## Vitória Ribeiro
+
 Estudante de Análise e Desenvolvimento de Sistemas
 Foco em Segurança da Informação e Cibersegurança
