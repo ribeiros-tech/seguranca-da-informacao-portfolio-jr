@@ -1,12 +1,12 @@
-🧠 Conclusão do Projeto
+# 🧠 Conclusão do Projeto
 
-📌 Visão Geral
+## 📌 Visão Geral
 
 O desenvolvimento deste projeto permitiu a aplicação prática de conceitos fundamentais de Segurança da Informação e LGPD, simulando um ambiente corporativo real.
 
 A implementação foi baseada na criação de políticas de segurança, automação de processos e geração de evidências, demonstrando não apenas conhecimento teórico, mas também capacidade prática.
 
-🎯 Principais Aprendizados
+## 🎯 Principais Aprendizados
 
 Durante o desenvolvimento, foram adquiridos conhecimentos importantes como:
 
@@ -16,7 +16,8 @@ Automação de tarefas com scripts em Bash
 Estruturação de logs para auditoria
 Importância da proteção de dados pessoais (LGPD)
 
-⚠️ Dificuldades Encontradas
+## ⚠️ Dificuldades Encontradas
+
 Organização inicial da estrutura do projeto
 Manipulação de diretórios no ambiente WSL
 Criação e execução de scripts Bash
@@ -24,7 +25,7 @@ Entendimento prático de logs e permissões
 
 Essas dificuldades foram superadas com prática e testes, contribuindo para o aprendizado técnico.
 
-🔐 Importância para o Mercado
+## 🔐 Importância para o Mercado
 
 A Segurança da Informação é uma área essencial dentro da tecnologia, especialmente com o aumento de vazamentos de dados e ataques cibernéticos.
 
@@ -35,7 +36,7 @@ Organização de processos
 Automação
 Noções de governança e compliance
 
-🚀 Aplicação Profissional
+## 🚀 Aplicação Profissional
 
 Os conceitos aplicados neste projeto podem ser utilizados em ambientes reais, como:
 
@@ -44,7 +45,7 @@ Implementação de políticas internas de segurança
 Monitoramento e auditoria de sistemas
 Prevenção de incidentes de segurança
 
-🏁 Conclusão Final
+## 🏁 Conclusão Final
 
 Este projeto representa um passo importante na formação como profissional de Segurança da Informação, demonstrando capacidade de aplicar conceitos teóricos em um cenário prático.
 
