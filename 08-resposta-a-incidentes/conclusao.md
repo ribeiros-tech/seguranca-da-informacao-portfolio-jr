@@ -1,4 +1,4 @@
-📌 Conclusão
+# 📌 Conclusão
 
 
 
@@ -22,13 +22,13 @@ Este projeto consolida conhecimentos fundamentais como:
 
 
 
-análise de logs
+- análise de logs
 
-controle de acesso
+- controle de acesso
 
-detecção de comportamentos anômalos
+- detecção de comportamentos anômalos
 
-resposta a incidentes
+- resposta a incidentes
 
 
 
