@@ -1,95 +1,94 @@
-🔍 Mini SIEM - Monitoramento de Logs Linux
+## 🔍 Mini SIEM - Monitoramento de Logs Linux
 
-📌 Descrição
+## 📌 Descrição
 
 Este projeto simula um SIEM (Security Information and Event Management) básico utilizando análise de logs do Linux.
 O objetivo é identificar eventos de segurança a partir do arquivo de autenticação do sistema (/var/log/auth.log).
 
-🎯 Objetivo
+## 🎯 Objetivo
 
 Monitorar e detectar:
 
-❌ Tentativas de login falhadas
-🔐 Uso de privilégios com sudo
-👤 Abertura de sessões de usuários
-⚠️ Eventos de falha de autenticação
+- ❌ Tentativas de login falhadas
+- 🔐 Uso de privilégios com sudo
+- 👤 Abertura de sessões de usuários
+- ⚠️ Eventos de falha de autenticação
 
-⚙️ Tecnologias Utilizadas
+## ⚙️ Tecnologias Utilizadas
 
-Linux (Ubuntu)
-Bash Script
-Terminal Linux
-
-
-📂 Estrutura do Projeto
-
-siem-log-analysis/
-├── README.md
-├── conclusao.md
-├── scripts/
-│   └── monitor_logs.sh
-├── evidencias/
-│   ├── execucao-script.png
-│   ├── erro-login.png
-│   └── relatorio-gerado.png
-└── exemplos/
-    └── relatorio-exemplo.txt
+- Linux (Ubuntu)
+- Bash Script
+- Terminal Linux
 
 
-🚀 Como Executar
-chmod +x scripts/monitor_logs.sh
-sudo ./scripts/monitor_logs.sh
+## 📂 Estrutura do Projeto
+
+- siem-log-analysis/
+- ├── README.md
+- ├── conclusao.md
+- ├── scripts/
+- │   └── monitor_logs.sh
+- ├── evidencias/
+- │   ├── execucao-script.png
+- │   ├── erro-login.png
+- │   └── relatorio-gerado.png
+- └── exemplos/
+-     └── relatorio-exemplo.txt
 
 
-🧪 Simulação de Ataque
+## 🚀 Como Executar
+- chmod +x scripts/monitor_logs.sh
+- sudo ./scripts/monitor_logs.sh
+
+
+## 🧪 Simulação de Ataque
 
 Para gerar eventos de segurança:
 
-sudo -k
-sudo ls
+- sudo -k
+- sudo ls
 
 👉 Insira a senha incorretamente algumas vezes.
 
-📊 Saída do Sistema
+## 📊 Saída do Sistema
 
 O script gera um relatório contendo:
 
-Logs de falha de login
-Uso de sudo
-Sessões abertas
-Quantidade total de falhas
+- Logs de falha de login
+- Uso de sudo
+- Sessões abertas
+- Quantidade total de falhas
 
 Exemplo disponível em:
 
-exemplos/relatorio-exemplo.txt
+- exemplos/relatorio-exemplo.txt
 
-📸 Evidências
+## 📸 Evidências
 
-Execução do Script
+- Execução do Script
 
+- Tentativas de Login com Erro
 
-Tentativas de Login com Erro
+- Relatório Gerado
 
+## 🧠 Conceitos Aplicados
 
-Relatório Gerado
+- Segurança da Informação
+- Auditoria de Logs
+- Monitoramento de Eventos
+- Detecção de Incidentes
+- Princípio de análise de SIEM
 
+## ⚠️ Limitações
 
-🧠 Conceitos Aplicados
+- Durante o projeto, foi realizada tentativa de implementação de um SIEM completo (Wazuh).
 
-Segurança da Informação
-Auditoria de Logs
-Monitoramento de Eventos
-Detecção de Incidentes
-Princípio de análise de SIEM
+- No entanto, devido a limitações de hardware, não foi possível estabilizar o ambiente.
 
-⚠️ Limitações
+- Como alternativa, foi desenvolvido um SIEM leve baseado em análise de logs, mantendo os conceitos fundamentais de segurança.
 
-Durante o projeto, foi realizada tentativa de implementação de um SIEM completo (Wazuh).
-
-No entanto, devido a limitações de hardware, não foi possível estabilizar o ambiente.
-
-Como alternativa, foi desenvolvido um SIEM leve baseado em análise de logs, mantendo os conceitos fundamentais de segurança.
-
-👩‍💻 Autora
+## 👩‍💻 Autora
 
 Vitória Ribeiro
+- Estudante de Análise e Desenvolvimento de Sistemas
+- Foco em Segurança da Informação e Cibersegurança
