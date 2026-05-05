@@ -1,10 +1,10 @@
-## 🛡️ Cybersecurity Portfolio — Vitória Ribeiro
+# 🛡️ Cybersecurity Portfolio — Vitória Ribeiro
 
 Portfólio prático e estratégico em Segurança da Informação, com foco em ambientes corporativos, governança, monitoramento e resposta a incidentes.
 
 Este repositório demonstra minha evolução técnica por meio de projetos práticos, simulando cenários reais enfrentados por empresas.
 
-## 🎯 Objetivo Profissional
+# 🎯 Objetivo Profissional
 
 Atuar na área de Segurança da Informação, contribuindo para:
 
@@ -13,7 +13,7 @@ Atuar na área de Segurança da Informação, contribuindo para:
 - Implementação de controles de segurança
 - Conformidade com normas e regulamentações (LGPD)
 
-## 🧠 Visão Estratégica
+# 🧠 Visão Estratégica
 
 Este portfólio vai além da teoria.
 
