@@ -103,3 +103,9 @@ Foi configurado Security Group com as seguintes regras:
 ## 🎯 Objetivo
 Garantir acesso restrito ao ambiente em nuvem.
 ---
+
+## 📌 Autor
+
+Vitória Ribeiro
+- Estudante de Análise e Desenvolvimento de Sistemas
+- Foco em Segurança da Informação e Cibersegurança
