@@ -1,4 +1,4 @@
-🧾 Conclusão
+## 🧾 Conclusão
 
 A implementação do controle de acesso em ambiente Linux permitiu consolidar, na prática, conceitos essenciais de Segurança da Informação, especialmente no que se refere à autenticação, autorização e segregação de privilégios.
 
