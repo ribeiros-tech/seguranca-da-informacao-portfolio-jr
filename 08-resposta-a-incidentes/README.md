@@ -75,11 +75,11 @@ Incluem:
 
 ## 🧩 Habilidades Demonstradas
 
-✔️ Análise de logs de segurança
-✔️ Investigação de incidentes
-✔️ Controle de acesso em sistemas Linux
-✔️ Monitoramento contínuo
-✔️ Pensamento analítico em cenários de ataque
+- ✔️ Análise de logs de segurança
+- ✔️ Investigação de incidentes
+- ✔️ Controle de acesso em sistemas Linux
+- ✔️ Monitoramento contínuo
+- ✔️ Pensamento analítico em cenários de ataque
 
 ## 🧭 Aplicação no Mercado
 
